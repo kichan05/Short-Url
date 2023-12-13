@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "SUIT", serif;
+}
+
+section.page {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+input {
+    color : #343a40;
+    font-size: 18px;
+    font-weight: 600;
+
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 0 2px #adb5bd;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    color : white;
+    font-size: 24px;
+
+    padding: 8px;
+
+    border: 0;
+    border-radius: 8px;
+    background-color: #228be6;
+}
+
+button:active {
+    background-color: #d0ebff;
+}
+
+.input-wrap {
+    width : 100%;
+
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap : 12px
+}
+
+.urls-wrap-wrap {
+    padding: 12px;
+}
+
+table {
+    width : 100%;
+    text-align: center;
+
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid black;
+}
+
+table thead {
+    color : #f8f9fa;
+    background-color: #343a40;
+}
+
+table tr * {
+    padding: 6px 0;
+}
+
+.row {
+    transition: 150ms;
+}
+
+.row .url {
+    cursor: pointer;
+}
+
+.row:nth-child(2n + 1) {
+    background-color: #f8f9fa;
+}
+
+.row:nth-child(2n + 1) {
+    background-color: #e9ecef;
+}
+
+.row:hover {
+    background-color: #adb5bd;
+}
+
+.row .buttons * {
+    cursor: pointer;
+    font-size: 28px;
+}
