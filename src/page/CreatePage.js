@@ -15,14 +15,13 @@ export const CreatePage = () => {
     setInputs({...inputs, [name]: value})
   }
   const handleSubmit = async (e) => {
-    if (inputs.name === "" || inputs.url === "")
+    if (inputs.name === "" || inputs.url === "" || inputs.key === "")
       return
 
     const data = {...inputs}
 
     try {
       const docRef = await setDoc(doc(db, collectionPath, inputs.key), data)
-      console.log("좀!!")
       setInputs({name: "", url: "", key: ""})
       await getData()
     } catch (e) {
