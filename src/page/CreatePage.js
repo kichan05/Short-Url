@@ -40,6 +40,7 @@ export const CreatePage = () => {
     (await getDocs(collection(db, collectionPath))).forEach(doc => {
       result.push({...doc.data()})
     })
+
     setUrls(result)
   }
 

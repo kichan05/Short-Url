@@ -33,7 +33,7 @@ const UrlsTable = ({urls, removeUrl}) => {
                 }}
               />
               <GoTrash onClick={() => {
-                removeUrl(url.id)
+                removeUrl(url.key)
               }}/>
             </td>
           </tr>
